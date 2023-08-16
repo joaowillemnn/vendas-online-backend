@@ -6,10 +6,11 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity({ name: 'adress' })
-export class UserEntity {
+@Entity({ name: 'address' })
+export class AddressEntity {
   @PrimaryGeneratedColumn('rowid')
   id: number;
+
   @Column({ name: 'user_id', nullable: false })
   userId: number;
 
