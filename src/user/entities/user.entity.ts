@@ -29,6 +29,6 @@ export class UserEntity {
   @UpdateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
 
-  @OneToMany(() => AddressEntity, (addresses) => addresses.user)
+  @OneToMany(() => AddressEntity, (address) => address.user)
   addresses?: AddressEntity[];
 }
